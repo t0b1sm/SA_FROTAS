@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root{
-    --color-tittle: #333;
+    --color-title: #333;
     --color-p: #666;
 }
 
@@ -21,17 +21,17 @@ body{
 .login-container{
     display: flex;
     max-width: 1000px;
-    width: 80%;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    width: 80%;
     min-height: auto;
     max-height: 90vh;
 }
 
 .login-card{
-    padding: 30px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -45,8 +45,8 @@ body{
 }
 
 .logo-section h1{
-    color: var(--color-tittle);
-    font-size: 2rem;
+    color: var(--color-title);
+    font-size: 1.8rem;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -58,7 +58,7 @@ body{
 
 .input-group{
     position: relative;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
 }
 
 .input-group i{
@@ -66,14 +66,14 @@ body{
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 1.1rem;
+    font: 1.1rem;
     color: #667eea;
 }
 
 .input-group input{
     width: 100%;
-    padding: 12px 12px 12px 40px;
-    border: 2px solid #e1e5e9;
+    padding: 15px 15px 15px 45px;
+    border: 3px solid #e1e5e9;
     border-radius: 8px;
     font-size: 1rem;
     background-color: #f8f9fa;
@@ -87,7 +87,7 @@ body{
 
 .login-btn{
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border: none;
     font-size: 1.2rem;
@@ -105,23 +105,23 @@ body{
 .message{
     padding: 15px;
     border-radius: 5px;
-    text-align: center;
+    text-align:center;
     min-height: 20px;
     font-weight: bold;
 }
 
 .message.sucess{
-    background: #d4edda;
+    margin: 15px 0;
+    background-color: #d4edda;
     color: #155724;
     border: 1px solid #c3e6cb;
-    margin: 12px 0;
 }
 
 .message.error{
-    background: #f8d7da;
+    margin: 15px 0;
+    background-color: #f8d7da;
     color: #721c24;
     border: 1px solid #f5c6cb;
-    margin: 12px 0;
 }
 
 .register{
@@ -134,20 +134,20 @@ body{
     font-size: 1rem;
 }
 
-/* features */
+/* Features */
 .features{
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    flex: 1;    
+    flex: 1;
 }
 
 .feature-card{
     background-color: rgba(255, 255, 255, 0.15);
-    padding: 25px;
+    padding: 12px;
     border-radius: 12px;
     text-align: center;
     color: #fff;
@@ -157,12 +157,11 @@ body{
 
 .feature-card i{
     font-size: 2.5rem;
-    margin-bottom: 2px;
+    margin-bottom: 20px;
 }
 
 .feature-card h3{
     font-size: 1.5rem;
+    margin-bottom: 20px;
     font-weight: bold;
-    margin-bottom: 2px;
-
 }
