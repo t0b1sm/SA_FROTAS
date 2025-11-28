@@ -138,13 +138,136 @@
                 </div>
                 
 
-
+                <div class="table-container">
+                    <table id="viagensTable" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Destino</th>
+                                <th>Data</th>
+                                <th>Horário</th>
+                                <th>Veículos</th>
+                                <th>Vagas</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
             </section>
 
+            <section id="veiculos-section" class="content-section">
+                <div class="section-header">
+                    <h1>Gestão de veiculos</h1>
+                    <button class="btn-primary" onclick="abrirModalVeiculo()">
+                        <i class="fas fa-plus"></i>
+                        Novo Veículo
+                    </button>
+                </div>
+                <div class="vehichles-grid" id="vaiculosGrid">
+                
+                </div>
+    
+            </section>
 
+            <section id="usuarios-section" class="content-section">
+                <div class="section-header">
+                    <h1>Funcionários</h1>
+                    <a href="register.html" class="btn-primary">
+                        <i class="fas fa-user-plus"></i>
+                        Novo Funcionario
+                    </a>
+                </div>
 
+                <div class="table-container">
+                    <table id="usuariosTable" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Email</th>
+                                <th>Setor</th>
+                                <th>Telefone</th>
+                                <th>Data Cadastrado </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </section>
          </main>
-
     </div>
+
+    <div id="modalViagem" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Nova Viagem</h2>
+                <span class="close" onclick="fecharModal('modalViagem')">&times;</span>
+            </div>
+            <form action="formViagem">
+                <div class="form-group">
+                    <label for="destino">Destino</label>
+                    <input type="text" id="destino" required>
+                </div>
+    
+                <div class="form-row">
+                    <div class="form-row">
+                        <label for="dataViagem">Data</label>
+                        <input type="date" id="dataViagem" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="horaSaida">Horário de Saída</label>
+                        <input type="time" id="horaSaida" required>
+                    </div>
+                </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="horaRetorno">Horário de Retorno:</label>
+                    <input type="time" id="horaRetorno" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="veiculoId">Veículo:</label>
+                    <select id="veiculoId" required>
+                        <option value="">Selecione um Veículo</option>
+                    </select>
+                </div>
+            </div>
+
+                <div class="form-group">
+                    <label for="vagasDisponíveis">Vagas Disponíveis</label>
+                    <input type="number" id="vagasDisponíveis" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="observacoes">observações</label>
+                    <textarea id="observacoes" rows="3"></textarea>
+                </div>
+
+            <div class="modal-action">
+                <button
+                type="button"
+                class="btn-secundary"
+                onclick="fecharModal('modalViagem')">
+                Cancelar
+            </button>
+            <button type="submit" class="btn-primary">Agendar Viagem</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <div id="modalVeiculo" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Novo Veículo</h2>
+                <span class="close" onclick="fecharModal('modalVeiculo')">&times;</span>
+            </div>
+            <form action="formVeiculo">
+                
+            </form>
+
+        </div>
+    </div>
+
 </body>
 </html>
