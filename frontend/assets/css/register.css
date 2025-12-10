@@ -9,7 +9,7 @@ body{
     width: 500px;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(30, 144, 255, 0.25); /* azul */
 }
 
 .requerimentos-senha{
@@ -18,10 +18,10 @@ body{
     margin: 12px;
     gap: 12px;
     font-size: 0.9rem;
-    color: #555;
+    color: #4a6b85; /* azul acinzentado */
 }
 
 .requerimentos-senha i{
-    color: #667eea;
+    color: #1E90FF; /* azul botão */
     font-size: 1.3rem;
 }

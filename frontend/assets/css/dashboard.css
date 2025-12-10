@@ -6,7 +6,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:#f5f7fa;
+    background-color:#e8f6fc; /* azul celeste bem claro */
     color: #333;
     line-height: 1.6;
 }
@@ -18,7 +18,7 @@ body{
 
 .sidebar{
     width: 280px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #5AB2E0 0%, #1E90FF 100%); /* azul celeste → azul forte */
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@ body{
 .header-sidebar{
     padding: 20px; 
     text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .header-sidebar img{
@@ -68,7 +68,7 @@ body{
 }
 
 .nav-link:hover{
-    border-left: 4px solid #fff;
+    border-left: 4px solid #BEE8FA; /* azul celeste claro */
 }
 
 .nav-link i{
@@ -78,7 +78,7 @@ body{
 
 .sidebar-footer{
     padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .user-info{
@@ -86,7 +86,7 @@ body{
     align-items: center;
     margin-bottom: 15px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 10px;
 }
 
@@ -108,7 +108,7 @@ body{
 .sidebar-footer button{
     width: 100%;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     color: #fff;
     border-radius: 8px;
     cursor: pointer;
@@ -121,17 +121,16 @@ body{
 }
 
 .sidebar-footer button:hover{
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.35);
     transform: scale(1.03);
 }
 
 /* AREA PRINCIPAL */
-/* Container principal do conteúdo */
 .main-content{
     flex: 1;
     margin-left: 280px;
     padding: 30px;
-    background:#eef0f4;   
+    background:#f1faff; /* azul muito claro */
 }
 
 .content-section{
@@ -142,7 +141,6 @@ body{
     display: block;
 }
 
-/* Cabeçalho das sessões com titulo e ações */
 .section-header{
     display: flex;
     justify-content: space-between;
@@ -150,20 +148,18 @@ body{
     margin-bottom: 30px;
 }
 
-/* Titulo principla da sessão (Dashboard) */
 .section-header h1{
     font-size: 2rem;
     font-weight: 700;
-    color: #333;
+    color: #27496d; /* azul escuro elegante */
 }
 
-/* Descrição/subtiluo da sessão */
 .section-header p{
-    color: #666;
+    color: #5a7da0;
     margin-top: 5px;
 }
 
-/* GRID DE ESTATISTICAS!! */
+/* GRID ESTATÍSTICAS */
 .stats-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
@@ -171,28 +167,27 @@ body{
     margin-bottom: 30px;
 }
 
-/* Card indiviual de estatistica */
 .stat-card{
     background: white;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0, 0.1);
+    box-shadow: 0 5px 15px rgba(30, 144, 255, 0.2);
     display: flex;
     align-items: center;
     transition: transform 0.3s ease;
 }
-/* configurar animação */
+
 .stat-card:hover{
     transform: translateY(-5px);
 }
 
-/* Estilizando os icones */
+/* Ícones */
 .stat-icon{
     width: 60px;
     height: 60px;
     border-radius: 12px;
     display: flex;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #87CEEB 0%, #1E90FF 100%);
     align-items: center;
     justify-content: center;
     margin-right: 20px;
@@ -203,16 +198,16 @@ body{
 .stat-info h3{
     font-size: 2rem;
     font-weight: 700;
-    color:#333;
+    color:#27496d;
     margin-bottom: 5px;
 }
 
 .stat-info p {
-    color: #666;
+    color: #5a7da0;
     font-size: 0.9rem;
 }
 
-/* CONTEUDO DA DASHBOARD! */
+/* DASHBOARD CONTENT */
 .dashboard-content{
     display: grid;
     grid-template-columns: 1fr;
@@ -221,14 +216,14 @@ body{
 
 .recent-trips{
     background: white;
-    box-shadow: 0 5px 15px rgba(0,0,0, 0.1);
+    box-shadow: 0 5px 15px rgba(30, 144, 255, 0.2);
     border-radius: 15px;
     padding: 25px;
 }
 
 .recent-trips h2{
     margin-bottom: 20px;
-    color: #333;
+    color: #27496d;
     font-weight: 600;
 }
 
@@ -237,335 +232,70 @@ body{
     flex-direction: column;
     gap: 15px;
 }
-.trip-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
+
 .trip-destination{
     font-weight: 600;
-    color: #333;
-    font-size: 1.1rem;
+    color: #27496d;
 }
+
 .trip-details{
-    display: flex;
-    gap: 20px;
-    font-size: 0.9rem;
-    color: #666;
+    color: #5a7da0;
 }
 
 .table-container{
     background-color: #fff;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0, 0.8);
-}
-
-.date-table{
-    width: 100%;
-    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(30, 144, 255, 0.2);
 }
 
 .date-table th{
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: left;
-    font-weight: 600;
-    color: #333;
-    border-bottom: 1px solid #dee2e6;
+    background-color: #e3f4ff;
+    color: #27496d;
+    border-bottom: 1px solid #bcdff8;
 }
 
 .date-table td{
-    padding: 20px;
-    color: #666;
-    border-bottom: 1px solid #dee2e6;
+    color: #5a7da0;
+    border-bottom: 1px solid #d4ecff;
 }
 
 .date-table tr:hover{
-    background-color: #f8f9fa;
+    background-color: #e9f6ff;
 }
 
-.vehicles-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
-
+/* CARDS DE VEÍCULOS */
 .vehicles-card{
     background-color: #fff;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0, 0.8);
-    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(30,144,255,0.2);
 }
 
-.vehicles-card:hover{
-    transform: translateY(-5px);
+/* Status */
+.vehicle-info-item i {
+    color: #1E90FF;
 }
 
-.vehicles-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
+/* STATUS BADGES */
+.status-agendada {
+    background: #cfe9ff;
+    color: #0066cc;
 }
 
-.vehicles-title{
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #333;
+/* INPUTS */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #1E90FF;
+    box-shadow: 0 0 0 3px rgba(30,144,255,0.15);
 }
 
-.vehicle-status {
-    padding: 5px 10px; /* Espaçamento interno compacto */
-    border-radius: 20px; /* Formato de pílula */
-    font-size: 0.8rem; /* Texto pequeno */
-    font-weight: 500;
-    }
-    /* Status disponível (verde) */
-    .vehicle-status.disponivel {
-    background: #d4edda; /* Fundo verde claro */
-    color: #155724; /* Texto verde escuro */
-    }
-    /* Status indisponível (vermelho) */
-    .vehicle-status.indisponivel {
-    background: #f8d7da; /* Fundo vermelho claro */
-    color: #721c24; /* Texto vermelho escuro */
-    }
-    /* Grid de informações do veículo */
-    .vehicle-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
-    gap: 10px; /* Espaçamento entre itens */
-    margin-bottom: 15px;
-    }
-    /* Item individual de informação do veículo */
-    .vehicle-info-item {
-    display: flex;
-    align-items: center; /* Alinha ícone e texto */
-    gap: 8px; /* Espaço entre ícone e texto */
-    font-size: 0.9rem; /* Texto menor para detalhes */
-    color: #666; /* Cor mais sutil */
-    }
-    /* Ícones das informações do veículo */
-    .vehicle-info-item i {
-    color: #667eea; /* Cor da marca */
-    width: 16px; /* Largura fixa para alinhamento */
-    }
-    /* ========================================
-    SISTEMA DE MODAIS
-    ======================================== */
-    /* Overlay do modal */
-    .modal {
-    display: none; /* Oculto por padrão */
-    position: fixed; /* Fixa na tela */
-    z-index: 1000; /* Acima de todos os elementos */
-    left: 0;
-    top: 0;
-    width: 100%; /* Ocupa tela completa */
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
-    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
-    }
-    /* Conteúdo principal do modal */
-    .modal-content {
-    background: white; /* Fundo branco para contraste */
-    margin: 5% auto; /* Centraliza verticalmente */
-    padding: 0;
-    border-radius: 15px; /* Cantos arredondados */
-    width: 90%; /* Largura responsiva */
-    max-width: 600px; /* Largura máxima */
-    max-height: 90vh; /* Altura máxima da viewport */
-    overflow-y: auto; /* Scroll vertical se necessário */
-    animation: modalSlideIn 0.3s ease-out; /* Animação de entrada */
-    }
-    /* Cabeçalho do modal */
-    .modal-header {
-    display: flex;
-    justify-content: space-between; /* Título à esquerda, botão fechar à direita */
-    align-items: center;
-    padding: 25px 30px; /* Espaçamento interno generoso */
-    border-bottom: 1px solid #dee2e6; /* Linha divisória */
-    }
-    /* Título do modal */
-    .modal-header h2 {
-    color: #333;
-    font-weight: 600; /* Peso médio para hierarquia */
-    }
-    /* Botão de fechar modal */
-    .close {
-    font-size: 2rem; /* Tamanho grande para facilitar clique */
-    font-weight: bold;
-    cursor: pointer;
-    color: #aaa; /* Cor neutra */
-    transition: color 0.3s ease; /* Animação suave */
-    }
-    /* Estado hover do botão fechar */
-    .close:hover {
-    color: #333; /* Cor mais escura no hover */
-    }
-    /* Formulário dentro do modal */
-    .modal form {
-    padding: 30px; /* Espaçamento interno confortável */
-    }
-    /* Grupo de campos do formulário */
-    .form-group {
-    margin-bottom: 20px; /* Espaçamento entre campos */
-    }
-    /* Linha com dois campos lado a lado */
-    .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
-    gap: 20px; /* Espaçamento entre campos */
-    }
-    /* Labels dos campos */
-    .form-group label {
-    display: block; /* Ocupa linha completa */
-    margin-bottom: 8px; /* Espaço antes do campo */
-    font-weight: 600; /* Destaque no label */
-    color: #333;
-    }
-    /* Campos de entrada do formulário */
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-    width: 100%; /* Ocupa toda largura disponível */
-    padding: 12px; /* Espaçamento interno confortável */
-    border: 2px solid #e1e5e9; /* Borda sutil */
-    border-radius: 8px; /* Cantos arredondados */
-    font-size: 1rem;
-    transition: border-color 0.3s ease; /* Animação da borda */
-    background: #f8f9fa; /* Fundo cinza claro */
-    }
-    /* Estado de foco dos campos */
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-    outline: none; /* Remove outline padrão */
-    border-color: #667eea; /* Borda colorida no foco */
-    background: white; /* Fundo branco no foco */
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1); /* Sombra colorida sutil */
-    }
-    /* Container dos botões de ação do modal */
-    .modal-actions {
-    display: flex;
-    justify-content: flex-end; /* Alinha botões à direita */
-    gap: 15px; /* Espaçamento entre botões */
-    margin-top: 30px; /* Espaço acima dos botões */
-    }
-    /* ========================================
-    BADGES DE STATUS
-    ======================================== */
-    /* Badge genérico de status */
-    .status-badge {
-    padding: 5px 12px; /* Espaçamento interno compacto */
-    border-radius: 20px; /* Formato de pílula */
-    font-size: 0.8rem; /* Texto pequeno */
-    font-weight: 500;
-    }
-    /* Status: Agendada (azul) */
-    .status-agendada {
-    background: #cce5ff; /* Fundo azul claro */
-    color: #0066cc; /* Texto azul escuro */
-    }
-    /* Status: Em andamento (amarelo) */
-    .status-em_andamento {
-    background: #fff3cd; /* Fundo amarelo claro */
-    color: #856404; /* Texto amarelo escuro */
-    }
-    /* Status: Concluída (verde) */
-    .status-concluida {
-    background: #d4edda; /* Fundo verde claro */
-    color: #155724; /* Texto verde escuro */
-    }
-    /* Status: Cancelada (vermelho) */
-    .status-cancelada {
-    background: #f8d7da; /* Fundo vermelho claro */
-    color: #721c24; /* Texto vermelho escuro */
-    }
-    /* ========================================
-    BOTÕES DE AÇÃO
-    ======================================== */
-    /* Botão genérico de ação */
-    .action-btn {
-    padding: 6px 12px; /* Espaçamento compacto */
-    border: none;
-    border-radius: 6px; /* Cantos levemente arredondados */
-    cursor: pointer;
-    font-size: 0.8rem; /* Texto pequeno */
-    margin-right: 5px; /* Espaço entre botões */
-    transition: all 0.3s ease; /* Animações suaves */
-    }
-    /* Botão de editar (azul) */
-    .btn-edit {
-    background: #17a2b8; /* Azul info */
-    color: white;
-    }
-    /* Estado hover do botão editar */
-    .btn-edit:hover {
-    background: #138496; /* Tom mais escuro no hover */
-    }
-    /* Botão de excluir (vermelho) */
-    .btn-delete {
-    background: #dc3545; /* Vermelho perigo */
-    color: white;
-    }
-    /* Estado hover do botão excluir */
-    .btn-delete:hover {
-    background: #c82333; /* Tom mais escuro no hover */
-    }
-    /* ========================================
-    ANIMAÇÕES
-    ======================================== */
-    /* Animação de entrada do modal */
-    @keyframes modalSlideIn {
-    from {
-    opacity: 0; /* Começa invisível */
-    transform: translateY(-50px); /* Começa acima da posição final */
-    }
-    to {
-    opacity: 1; /* Termina visível */
-    transform: translateY(0); /* Termina na posição normal */
-    }
-    }
-    /* ========================================
-    RESPONSIVIDADE MOBILE
-    ======================================== */
-    /* Ajustes para telas pequenas (tablets e celulares) */
-    @media (max-width: 768px) {
-    /* Sidebar ocupa tela completa em mobile */
-    .sidebar {
-    width: 100%; /* Largura completa */
-    position: relative; /* Não mais fixa */
-    height: auto; /* Altura automática */
-    }
-    /* Conteúdo principal sem margem lateral */
-    .main-content {
-    margin-left: 0; /* Remove margem da sidebar */
-    padding: 20px; /* Reduz padding em mobile */
-    }
-    /* Cabeçalho das seções em coluna */
-    .section-header {
-    flex-direction: column; /* Organização vertical */
-    align-items: flex-start; /* Alinha à esquerda */
-    gap: 15px; /* Espaço entre elementos */
-    }
-    /* Grid de estatísticas em uma coluna */
-    .stats-grid {
-    grid-template-columns: 1fr; /* Uma coluna apenas */
-    }
-    /* Formulários em uma coluna */
-    .form-row {
-    grid-template-columns: 1fr; /* Campos empilhados */
-    }
-    /* Modal ocupa mais espaço em mobile */
-    .modal-content {
-    width: 95%; /* Quase tela completa */
-    margin: 10% auto; /* Margem menor */
-    }
-    /* Grid de veículos em uma coluna */
-    .vehicles-grid {
-    grid-template-columns: 1fr; /* Uma coluna apenas */
-    }
-    }
+/* BOTÕES */
+.btn-edit {
+    background: #1E90FF;
+}
+
+.btn-edit:hover {
+    background: #1873cc;
+}
